@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/regist.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="jadwal">
+        <a href="#" class="logo">KARATE</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="dropbtn">Home</a></li>
+                <li class="dropdown"><a href="#About" class="dropbtn">Tentang</a>
+                    <div class="dropdown-content">
+                        <a href="#about">Karate</a>
+                        <a href="#coach">Pelatih</a>
+                        <a href="#">Dojo/Ranting</a>
+                    </div>
+                </li>
+                <li><a href="#activity" class="dropbtn">Activity</a></li> 
+                <li class="dropdown" class="dropbtn"><a href="#join" class="dropbtn">Join</a>
+                    <div class="dropdown-content">
+                        <a href="register.html" target='_blank'>Pendaftaran</a>
+                        <a href="cost.html">Biaya Pelatihan</a>
+                        <a href="jadwal.html" target="_blank">Jadwal Latihan</a>
+                    </div>
+                </li>
+                    
+                <li><a href="#contact" class="dropbtn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="#" class="form">
+        <h1 class="text-center">Registration Form</h1>
+        <!-- Progress bar -->
+        <div class="progressbar">
+          <div class="progress" id="progress"></div>
+          
+          <div
+            class="progress-step progress-step-active"
+            data-title="Intro"
+          ></div>
+          <div class="progress-step" data-title="Contact"></div>
+          <div class="progress-step" data-title="ID"></div>
+          <div class="progress-step" data-title="Password"></div>
+        </div>
+  
+        <!-- Steps -->
+        <div class="form-step form-step-active">
+          <div class="input-group">
+            <label for="Nama">Nama Lengkap</label>
+            <input type="text" name="Nama" id="Nama" />
+          </div>
+          <div class="input-group">
+            <label for="telepon">Nomor telepon</label>
+            <input type="text" name="telepon" id="telepon" />
+          </div>
+          <div class="">
+            <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+          </div>
+        </div>
+        <div class="form-step">
+            <div class="input-group">
+              <label for="dob">Tanggal Lahir</label>
+              <input type="date" name="dob" id="dob" />
+            </div>
+            <div class="input-group">
+              <label for="alamat">ALamat</label>
+              <input type="text" name="alamat" alamat="alamat" />
+            </div>
+            <div class="btns-group">
+              <a href="#" class="btn btn-prev">Previous</a>
+              <a href="#" class="btn btn-next">Next</a>
+            </div>
+          </div>
+        <div class="form-step">
+          <div class="input-group">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="btns-group">
+            <a href="#" class="btn btn-prev">Previous</a>
+            <a href="#" class="btn btn-next">Next</a>
+          </div>
+        </div>
+        
+        <div class="form-step">
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+            />
+          </div>
+          <div class="btns-group">
+            <a href="#" class="btn btn-prev">Previous</a>
+            <input type="submit" value="Submit" class="btn" />
+          </div>
+        </div>
+      </form>
+      <script type="text/javascript" src="script.js"></script>
+      
+</body>
+</html>
